@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eventos inLine</title>
+        <style>
+            body {
+            background-color: white;
+            }
+        </style>
+    </head>
+    <body onclick="mudarCor();">
+        <button onclick="mostrarAlerta();">Por favor, clicke-me!</button>
+        <br/><br/>
+        <span class="info" onmouseover="mudarTexto(this);"><b>Atenção!</b> Não clique no botão acima!</span>
+        <br/><br/>
+        <input onkeyup="escreveTexto(this);" />
+        <br/><br/>
+        <span id="texto"></span>
+        <script src="./js/aula03.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Seção 04 - Aula 13</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Seção 04 - Aula 13</h1>
+
+        <script>
+            //escopo de variáveis
+            function somar(num1, num2){
+                var valor = 5; // variável local, só é reconhecidad dentro do bloco desta função.
+                return valor + num1 + num2;
+            }
+
+            for(var i = 0; i < 5; i++){
+                var outra = 5; // variavel global, tem acesso globalmente mesmo dentro do for, if, while.
+                console.log(i * outra);
+            }
+
+            console.log(somar(4, 6));
+            console.log(outra);
+
+            for(var j = 0; j < 5; j++){
+                let local = 12; // utilize let para tornar variaveis locais.
+                console.log(j * local);
+            }
+            
+        </script>
+    </body>
+
+</html>
